@@ -289,7 +289,7 @@ Recordar que los eventos HTML nos mandan un objeto _Event_ que podemos usar o no
 
 ## Elementos reactivos
 
-Uso de **ref()**. Recordar que hay que traerlo de la librería _vue_:
+Uso de **ref()**. Recordar que hay que traerlo de la librería _Vue.js_:
 
 ```js
 import { ref } from 'vue';
@@ -330,7 +330,7 @@ Los eventos admiten [modificadores](https://vuejs.org/guide/essentials/event-han
   });
   ```
 
-## Enseñamos otro modificadores
+## Enseñamos otros modificadores
 
 Vemos que hay varios y que estos se pueden **encadenar**
 
@@ -345,7 +345,7 @@ También vemos que con ellos no necesitamos pasar el objeto Event
 - V-IF
 - V-SHOW
 
-Vemos también el código que añade vue
+Vemos también el código que añade Vue.js
 
 ## Problemas si los usamos juntos V-FOR y V-IF
 
@@ -446,35 +446,35 @@ Podemos añadir las siguientes líneas a la sección **scripts** de nuestro arch
 
 ## Código base de ejemplo
 
-```js
+```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const acierto = ref('false')
-const array = ref(['London', 'Berlin', 'Brussels', 'Paris'])
-const contestada = ref(false)
+  const acierto = ref('false');
+  const array = ref(['London', 'Berlin', 'Brussels', 'Paris']);
+  const contestada = ref(false);
 
-const correctAnswer = ref('Paris')
-const salidaClase = () => {
-  return {
-    error: contestada.value && !acierto.value,
-    acierto: contestada.value && acierto.value,
-    pendiente: !contestada.value,
-  }
-}
-const shuffledArr = () => {
-  contestada.value = false
-  for (let i = array.value.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[array.value[i], array.value[j]] = [array.value[j], array.value[i]]
-  }
-}
+  const correctAnswer = ref('Paris');
+  const salidaClase = () => {
+    return {
+      error: contestada.value && !acierto.value,
+      acierto: contestada.value && acierto.value,
+      pendiente: !contestada.value,
+    };
+  };
+  const shuffledArr = () => {
+    contestada.value = false;
+    for (let i = array.value.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array.value[i], array.value[j]] = [array.value[j], array.value[i]];
+    }
+  };
 
-const respuestaCorrecta = respuesta => {
-  console.log(respuesta, respuesta === correctAnswer.value)
-  acierto.value = (respuesta === correctAnswer.value)
-  contestada.value = true
-}
+  const respuestaCorrecta = (respuesta) => {
+    console.log(respuesta, respuesta === correctAnswer.value);
+    acierto.value = respuesta === correctAnswer.value;
+    contestada.value = true;
+  };
 </script>
 
 <template>
@@ -492,14 +492,14 @@ const respuestaCorrecta = respuesta => {
 </template>
 
 <style>
-.error {
-  color: red;
-}
-.acierto {
-  color: aquamarine;
-}
-.pendiente {
-  color: blue;
-}
+  .error {
+    color: red;
+  }
+  .acierto {
+    color: aquamarine;
+  }
+  .pendiente {
+    color: blue;
+  }
 </style>
 ```
