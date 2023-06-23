@@ -35,9 +35,9 @@ npm run build
 [Etiquetas](https://git-scm.com/book/es/v2/Fundamentos-de-Git-Etiquetado#r_git_tagging).
 Las etiquetas se usan para marcar versiones de código para lanzamiento.
 
-### Listar etiquetas
+### Listar Etiquetas
 
-Listar las etiquetas disponibles en Git es sencillo. Simplemente escribe:
+Para listar las etiquetas disponibles en Git, simplemente escribe:
 
 ```sh
 $ git tag
@@ -47,7 +47,7 @@ v1.3
 
 ### Etiquetas Anotadas
 
-Crear una etiqueta anotada en Git es sencillo. La forma más fácil de hacerlo es especificar la opción -a cuando ejecutas el comando git tag:
+Para crear una etiqueta anotada, la forma más fácil de hacerlo es especificar la opción -a cuando ejecutas el comando git tag:
 
 ```sh
 $ git tag -a v1.4 -m 'my version 1.4'
@@ -102,7 +102,7 @@ $ git push origin --tags
 
 # Vue.js
 
-## Crear App y limpiar
+## Crear App-vue y limpiar
 
 ```sh
 cd "directorio de trabajo"
@@ -120,7 +120,7 @@ code .
 {{ 1 + 1 }}
 ```
 
-## Repasamos data Y methods
+## Repasamos _data_ y _methods_
 
 Descubrimos el nuevo:
 
