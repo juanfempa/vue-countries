@@ -210,7 +210,7 @@ const frases = [
 ];
 ```
 
-## Directiva v-for
+## Directiva _v-for_
 
 Mostrarlas con v-for (con in, no se suele usar of)
 
@@ -235,7 +235,7 @@ const objeto = { a: 1, b: 2 };
 <blockquote>— Este guión largo se introduce con: ALT+0151</blockquote>
 ```
 
-## Más sobre v-for
+## Más sobre _v-for_
 
 Esta directiva también nos proporciona el INDEX
 
@@ -279,23 +279,23 @@ Repaso funciones de flecha
   };
   ```
 
-## Repaso argumento event
+## Repaso argumento _Event_
 
-Recordar que los eventos HTML nos mandan un objeto Event que podemos usar o no según nuestras necesidades.
+Recordar que los eventos HTML nos mandan un objeto _Event_ que podemos usar o no según nuestras necesidades.
 
 ## Directiva de doble enlace
 
-**V-MODEL** (se usa principalmente en etiqueta input principalmente)
+**V-MODEL** (se usa principalmente en etiqueta input)
 
 ## Elementos reactivos
 
-Uso de **ref()**. Recordar que hay que traerlo de la librería vue:
+Uso de **ref()**. Recordar que hay que traerlo de la librería _vue_:
 
 ```js
 import { ref } from 'vue';
 ```
 
-Enseñamos que en la sección de <sciprt setup></sciprt> es imprescindible usar la propiedad **value**:
+Enseñamos que en la sección de `<script setup></script>` es imprescindible usar la propiedad **value**:
 
 ```js
 const frases = ref('En un lugar de la Mancha');
