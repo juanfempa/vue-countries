@@ -104,7 +104,7 @@ $ git push origin --tags
 
 ## Crear App-vue y limpiar
 
-Para evitar problemas, se recomienda crear primero el repositorio en GitHub:
+Para evitar problemas, se recomienda crear **primero el repositorio en GitHub**:
 
 Hay que prestar atención a los mensajes que nos muestra al finalizar:
 
@@ -141,7 +141,10 @@ Este comando lo reservamos y lo ejecutaremos a su debido tiempo. Ahora continuam
 3. `cd "app-vue"`
 4. `npm install`
 5. `git init`
-6. `code .`
+6. `git remote add origin https://github.com/juanfempa/app-vue.git`
+7. `code .`
+
+El resto de pasos (_Commit_ y _Push_) los realizamos con VSCode. No olvidar añadir **siempre** un comentario al hacer las confirmaciones.
 
 ## Vemos la interpolación
 
