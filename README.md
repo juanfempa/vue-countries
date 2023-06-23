@@ -320,7 +320,7 @@ Los eventos admiten [modificadores](https://vuejs.org/guide/essentials/event-han
 
 - Solución:
 
-  Esto es (sólo un ejemplo)[https://www.elmundo.es/comunidad-valenciana/2015/10/28/5630928bca4741a11f8b4585.html]:
+  Esto es [sólo un ejemplo](https://www.elmundo.es/comunidad-valenciana/2015/10/28/5630928bca4741a11f8b4585.html):
 
   ```js
   frases.value = frases.value.unshift({
