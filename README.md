@@ -104,15 +104,44 @@ $ git push origin --tags
 
 ## Crear App-vue y limpiar
 
-```sh
-cd "directorio de trabajo"
-npm init vue@latest
-cd "app-vue"
-npm install
-git init
-code .
+Para evitar problemas, se recomienda crear primero el repositorio en GitHub:
 
+Hay que prestar atención a los mensajes que nos muestra al finalizar:
+
+_…o crea un nuevo repositorio en la línea de comando_
+
+```sh
+echo "# app-vue" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/juanfempa/app-vue.git
+git push -u origin main
 ```
+
+_…o subir un repositorio existente desde la línea de comando_
+
+```sh
+git remote add origin https://github.com/juanfempa/app-vue.git
+git branch -M main
+git push -u origin main
+```
+
+Lo más importante de las opciones que nos muestra, es que nos quedemos con la línea del comando que realiza el enlace de nuestro repositorio local con el remoto:
+
+```sh
+git remote add origin https://github.com/juanfempa/app-vue.git
+```
+
+Este comando lo reservamos y lo ejecutaremos a su debido tiempo. Ahora continuamos con el resto de pasos en nuestro equipo local:
+
+1. `cd "directorio de trabajo"`
+2. `npm init vue@latest`
+3. `cd "app-vue"`
+4. `npm install`
+5. `git init`
+6. `code .`
 
 ## Vemos la interpolación
 
